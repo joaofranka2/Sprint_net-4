@@ -4,7 +4,9 @@
 CurriculumEnhancerAPI
 CurriculumEnhancerAPI é uma API RESTful desenvolvida em .NET Core para analisar currículos e fornecer sugestões de melhoria. Além disso, ela possui funcionalidades de análise de sentimento para identificar o tom emocional de um texto.
 
-Funcionalidades
+
+## Funcionalidades
+
 Análise de Currículo: Oferece sugestões para melhorar a qualidade do conteúdo de currículos.
 Análise de Sentimento: Identifica o tom do texto enviado, utilizando modelos de Machine Learning com ML.NET.
 Resiliência de Conexão: Implementa política de retry com Polly para chamadas de API externas, garantindo maior estabilidade.
