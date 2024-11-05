@@ -46,7 +46,7 @@ Polly: Instalado via NuGet no projeto para gerenciar resiliência.
 
 JSON Server (opcional): Simular uma API local para testes
 
-Instalação dos Pacotes Necessários 
+#Instalação dos Pacotes Necessários 
 
 Execute os seguintes comandos no Package Manager Console para instalar as dependências:
 
@@ -55,7 +55,7 @@ dotnet add package Polly.Extensions.Http
 dotnet add package Microsoft.ML
 dotnet add package Microsoft.ML.FastTree
 
-Configuração
+#Configuração
 
 No arquivo appsettings.json, configure a URL base para a API externa (ou uma API simulada para testes locais):
 
@@ -75,12 +75,13 @@ No arquivo appsettings.json, configure a URL base para a API externa (ou uma API
 Endpoints da API
 
 1. Análise de Currículo
+
 2. 
 Endpoint: POST /api/Curriculum/analyze
 
-Descrição: Recebe um currículo em formato de texto e retorna sugestões de melhorias.
+#Descrição: Recebe um currículo em formato de texto e retorna sugestões de melhorias.
 
-Exemplo de Requisição:
+##Exemplo de Requisição:
 
 curl -X 'POST' \
   'https://localhost:7125/api/Curriculum/analyze' \
@@ -89,7 +90,7 @@ curl -X 'POST' \
   -d '{
         "text": "Minha experiência inclui desenvolvimento de software..."
       }'
-Exemplo de Resposta:
+##Exemplo de Resposta:
 
 {
   "suggestions": [
@@ -99,6 +100,7 @@ Exemplo de Resposta:
 }
 
 2. Análise de Sentimento
+
 Endpoint: POST /api/Curriculum/sentiment
 
 Descrição: Analisa o tom emocional do texto fornecido, utilizando um modelo de ML para determinar o sentimento positivo ou negativo.
@@ -120,9 +122,9 @@ Exemplo de Resposta:
   "score": 0.95
 }
 
-Estrutura de Classes e Serviços
+#Estrutura de Classes e Serviços
 
-CurriculumService.cs
+##CurriculumService.cs
 
 Este serviço é responsável por realizar chamadas para a API externa que analisa o currículo. Implementa a interface ICurriculumService para facilitar testes e modularidade.
 
